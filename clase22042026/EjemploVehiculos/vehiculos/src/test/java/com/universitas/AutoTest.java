@@ -8,11 +8,12 @@ class AutoTest {
 
     @Test
     void testConstructorAutoValido() {
-        Auto auto = new Auto("Toyota", "Corolla", "Nafta", 1800);
+        Auto auto = new Auto(Marca.TOYOTA, "Corolla", "Nafta", 1800);
 
         assertAll(
             () -> assertNotNull(auto),
-            () -> assertEquals("Toyota", auto.getMarca()),
+            () -> assertEquals(Marca.TOYOTA, auto.getMarca()),
+            () -> assertEquals("Toyota", auto.getMarca().getNombre()),
             () -> assertEquals("Corolla", auto.getModelo()),
             () -> assertNotNull(auto.getMotor()),
             () -> assertEquals("Nafta", auto.getMotor().getTipo()),
@@ -24,7 +25,7 @@ class AutoTest {
 
     @Test
     void testAgregarHastaCincoRuedasDeMismaMedida() {
-        Auto auto = new Auto("Ford", "Fiesta", "Nafta", 1600);
+        Auto auto = new Auto(Marca.FORD, "Fiesta", "Nafta", 1600);
 
         for (int i = 0; i < 5; i++) {
             auto.agregarRueda(new Rueda("Pirelli", 15));
@@ -35,35 +36,42 @@ class AutoTest {
 
     @Test
     void testAgregarMasDeCincoRuedasDebeFallar() {
-        Auto auto = new Auto("Ford", "Focus", "Nafta", 2000);
+        Auto auto = new Auto(Marca.FORD, "Focus", "Nafta", 2000);
 
         for (int i = 0; i < 5; i++) {
             auto.agregarRueda(new Rueda("Pirelli", 15));
         }
 
-        IllegalStateException ex = assertThrows(IllegalStateException.class,
-            () -> auto.agregarRueda(new Rueda("Pirelli", 15)));
+        IllegalStateException ex = assertThrows(
+            IllegalStateException.class,
+            () -> auto.agregarRueda(new Rueda("Pirelli", 15))
+        );
 
         assertTrue(ex.getMessage().contains("más de 5 ruedas"));
     }
 
     @Test
     void testAgregarRuedaNulaDebeFallar() {
-        Auto auto = new Auto("Ford", "Ka", "Nafta", 1000);
+        Auto auto = new Auto(Marca.FORD, "Ka", "Nafta", 1000);
 
-        IllegalArgumentException ex = assertThrows(IllegalArgumentException.class,
-            () -> auto.agregarRueda(null));
+        IllegalArgumentException ex = assertThrows(
+            IllegalArgumentException.class,
+            () -> auto.agregarRueda(null)
+        );
 
         assertTrue(ex.getMessage().contains("no puede ser nula"));
     }
 
     @Test
     void testAgregarRuedasDeDistintaMedidaDebeFallar() {
-        Auto auto = new Auto("Ford", "Fiesta", "Nafta", 1600);
+        Auto auto = new Auto(Marca.FORD, "Fiesta", "Nafta", 1600);
+
         auto.agregarRueda(new Rueda("Pirelli", 15));
 
-        IllegalArgumentException ex = assertThrows(IllegalArgumentException.class,
-            () -> auto.agregarRueda(new Rueda("Pirelli", 17)));
+        IllegalArgumentException ex = assertThrows(
+            IllegalArgumentException.class,
+            () -> auto.agregarRueda(new Rueda("Pirelli", 17))
+        );
 
         assertTrue(ex.getMessage().contains("misma medida"));
     }

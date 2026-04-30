@@ -21,7 +21,7 @@ public class Camion extends Vehiculo {
      * @param cilindrada      cilindrada del motor
      * @param capacidadCarga  capacidad de carga en kg
      */
-    public Camion(String marca, String modelo, String tipoMotor, int cilindrada, double capacidadCarga) {
+    public Camion(Marca marca, String modelo, String tipoMotor, int cilindrada, double capacidadCarga) {
         super(marca, modelo);
         this.motor = new Motor(tipoMotor, cilindrada);
         this.ruedas = new ArrayList<>();
@@ -73,7 +73,7 @@ public class Camion extends Vehiculo {
     @Override
     public void mostrarInfo() {
         System.out.println("=== CAMIÓN ===");
-        System.out.println("Marca: " + getMarca());
+        System.out.println("Marca: " + getMarca().getNombre());
         System.out.println("Modelo: " + getModelo());
         System.out.println("Capacidad de carga: " + capacidadCarga + " kg");
         motor.mostrarInfo();

@@ -4,4 +4,5 @@ com\universitas\Motor.class
 com\universitas\Vehiculo.class
 com\universitas\ServicioVehiculo.class
 com\universitas\Camion.class
+com\universitas\Marca.class
 com\universitas\App.class

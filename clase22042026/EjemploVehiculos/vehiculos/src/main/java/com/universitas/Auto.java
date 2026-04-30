@@ -19,7 +19,7 @@ public class Auto extends Vehiculo {
      * @param tipoMotor   tipo de motor
      * @param cilindrada  cilindrada del motor
      */
-    public Auto(String marca, String modelo, String tipoMotor, int cilindrada) {
+    public Auto(Marca marca, String modelo, String tipoMotor, int cilindrada) {
         super(marca, modelo);
         this.motor = new Motor(tipoMotor, cilindrada);
         this.ruedas = new ArrayList<>();
@@ -72,7 +72,7 @@ public class Auto extends Vehiculo {
     @Override
     public void mostrarInfo() {
         System.out.println("=== AUTO ===");
-        System.out.println("Marca: " + getMarca());
+        System.out.println("Marca: " + getMarca().getNombre());
         System.out.println("Modelo: " + getModelo());
         motor.mostrarInfo();
         System.out.println("Cantidad de ruedas: " + ruedas.size());
