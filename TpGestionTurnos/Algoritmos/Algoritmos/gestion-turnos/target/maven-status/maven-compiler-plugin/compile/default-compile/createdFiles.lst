@@ -1,0 +1,8 @@
+com\universitas\Especialidad.class
+com\universitas\Paciente.class
+com\universitas\Profesional.class
+com\universitas\Consultorio.class
+com\universitas\Persona.class
+com\universitas\Turno.class
+com\universitas\SistemaTurnos.class
+com\universitas\App.class

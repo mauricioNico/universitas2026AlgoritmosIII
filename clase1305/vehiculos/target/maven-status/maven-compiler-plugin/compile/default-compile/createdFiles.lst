@@ -1,0 +1,13 @@
+com\universitas\Rueda.class
+com\universitas\dao\AutoDAO.class
+com\universitas\dao\VehiculoDAO.class
+com\universitas\ServicioVehiculo.class
+com\universitas\dao\ConexionBD.class
+com\universitas\Camion.class
+com\universitas\dao\MotorDAO.class
+com\universitas\Auto.class
+com\universitas\dao\RuedaDAO.class
+com\universitas\Motor.class
+com\universitas\Vehiculo.class
+com\universitas\Marca.class
+com\universitas\App.class
