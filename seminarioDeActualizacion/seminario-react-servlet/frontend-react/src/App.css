@@ -1,0 +1,38 @@
+.contenedor {
+  max-width: 700px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #1f3c88;
+}
+
+.formulario {
+  margin: 20px 0;
+}
+
+.formulario input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.formulario button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+.lista li {
+  background-color: #f1f1f1;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+}

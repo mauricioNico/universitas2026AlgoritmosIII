@@ -198,7 +198,7 @@ public class GenerarLista {
                 dato = (int) (Math.random() * 100);
             }
 
-            lista.agregar(dato);
+            lista.agregar(dato); //es un objeto de la clase ListaDoble, y se llama al método agregar() para agregar un nuevo nodo con el valor dato a la lista. El método agregar() es responsable de crear un nuevo nodo con el valor dado y agregarlo al final de la lista, actualizando las referencias de los nodos para mantener la estructura de la lista doblemente enlazada.
         }
 
         /*

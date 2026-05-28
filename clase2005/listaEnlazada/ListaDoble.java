@@ -33,7 +33,7 @@ public class ListaDoble {
      */
     public void agregar(int dato) {
 
-        Nodo nuevoNodo = new Nodo(dato);
+        Nodo nuevoNodo = new Nodo(dato); //nuevoNodo es una instancia de la clase Nodo, creada con el valor dato. Es una instancia local al método agregar(), y se utiliza para representar el nuevo nodo que se va a agregar a la lista doblemente enlazada. El constructor de la clase Nodo se llama con el valor dato para inicializar el atributo dato del nuevo nodo, y los atributos siguiente y anterior se inicializan en null por defecto. 
 
         /*
          * Si la lista está vacía,

@@ -1,0 +1,14 @@
+com\universitas\modelo\Especialidad.class
+com\universitas\dao\EspecialidadDAO.class
+com\universitas\dao\ProfesionalDAO.class
+com\universitas\modelo\Profesional.class
+com\universitas\app\App.class
+com\universitas\SistemaTurnos.class
+com\universitas\dao\TurnoDAO.class
+com\universitas\dao\ConexionBD.class
+com\universitas\modelo\Persona.class
+com\universitas\modelo\Paciente.class
+com\universitas\dao\ConsultorioDAO.class
+com\universitas\modelo\Consultorio.class
+com\universitas\modelo\Turno.class
+com\universitas\dao\PacienteDAO.class

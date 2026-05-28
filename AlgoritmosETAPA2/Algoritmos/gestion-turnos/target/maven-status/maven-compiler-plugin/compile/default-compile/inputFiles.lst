@@ -1,0 +1,14 @@
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\app\App.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\dao\ConexionBD.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\dao\ConsultorioDAO.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\dao\EspecialidadDAO.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\dao\PacienteDAO.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\dao\ProfesionalDAO.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\dao\TurnoDAO.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\modelo\Consultorio.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\modelo\Especialidad.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\modelo\Paciente.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\modelo\Persona.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\modelo\Profesional.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\modelo\Turno.java
+C:\Algoritmos\Algoritmos\gestion-turnos\src\main\java\com\universitas\SistemaTurnos.java
