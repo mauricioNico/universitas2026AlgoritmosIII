@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="panel" prefHeight="690.0" prefWidth="1024.0"
+            xmlns="http://javafx.com/javafx/22"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.simlistadoble.Simulador">
+  <children>
+    <!-- Imagenes en el fondo de la aplicacion -->
+    <ImageView fx:id="fondo" fitHeight="690.0" fitWidth="1024.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/fondo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="borde1" fitHeight="20.0" fitWidth="800.0" layoutX="116.0" layoutY="481.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" visible="false">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/borde1.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="borde2" fitHeight="20.0" fitWidth="800.0" layoutX="116.0" layoutY="481.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" visible="false">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/borde2.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="borde3" fitHeight="20.0" fitWidth="800.0" layoutX="116.0" layoutY="481.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" visible="false">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/borde3.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="borde" fitHeight="21.075" fitWidth="843.0" layoutX="90.0" layoutY="481.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/borde1.png" />
+      </image>
+    </ImageView>
+
+    <!-- titulo del Simulador -->
+    <Label id="texto-titulo" alignment="CENTER" layoutX="110.0" layoutY="140.0" prefWidth="800.0" text="Simulador ListaD&lt;T&gt;" textFill="RED">
+      <font>
+        <Font name="Verdana" size="22.0" />
+      </font>
+    </Label>
+
+    <!-- Objetos Nodos pintados en el tablero -->
+    <ImageView fx:id="nodoNull0" fitHeight="40.0" fitWidth="40.0" layoutX="0.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Null0.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodoNull" fitHeight="40.0" fitWidth="40.0" layoutX="0.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="false">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Null.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo14" fitHeight="40.0" fitWidth="40.0" layoutX="825.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo13" fitHeight="40.0" fitWidth="40.0" layoutX="775.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo12" fitHeight="40.0" fitWidth="40.0" layoutX="725.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo11" fitHeight="40.0" fitWidth="40.0" layoutX="675.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo10" fitHeight="40.0" fitWidth="40.0" layoutX="625.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo9" fitHeight="40.0" fitWidth="40.0" layoutX="575.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo8" fitHeight="40.0" fitWidth="40.0" layoutX="525.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo7" fitHeight="40.0" fitWidth="40.0" layoutX="475.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo6" fitHeight="40.0" fitWidth="40.0" layoutX="425.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo5" fitHeight="40.0" fitWidth="40.0" layoutX="375.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo4" fitHeight="40.0" fitWidth="40.0" layoutX="325.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo3" fitHeight="40.0" fitWidth="40.0" layoutX="275.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo2" fitHeight="40.0" fitWidth="40.0" layoutX="225.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo1" fitHeight="40.0" fitWidth="40.0" layoutX="175.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="nodo0" fitHeight="40.0" fitWidth="40.0" layoutX="125.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Nodo0.png" />
+      </image>
+    </ImageView>
+
+    <!-- Labels que representan la informacion -->
+    <Label fx:id="label0" alignment="CENTER" layoutX="125.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="444" textFill="WHITE" visible="true">
+      <font>
+        <Font name="Arial Black" size="13.0" fx:id="x6" />
+      </font>
+    </Label>
+    <Label fx:id="label1" alignment="CENTER" font="$x6" layoutX="175.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label2" alignment="CENTER" font="$x6" layoutX="225.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label3" alignment="CENTER" font="$x6" layoutX="275.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label4" alignment="CENTER" font="$x6" layoutX="325.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label5" alignment="CENTER" font="$x6" layoutX="375.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label6" alignment="CENTER" font="$x6" layoutX="425.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label7" alignment="CENTER" font="$x6" layoutX="475.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label8" alignment="CENTER" font="$x6" layoutX="525.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label9" alignment="CENTER" font="$x6" layoutX="575.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label10" alignment="CENTER" font="$x6" layoutX="625.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label11" alignment="CENTER" font="$x6" layoutX="675.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label12" alignment="CENTER" font="$x6" layoutX="725.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label13" alignment="CENTER" font="$x6" layoutX="775.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="label14" alignment="CENTER" font="$x6" layoutX="825.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+    <Label fx:id="labelNull" alignment="CENTER" layoutX="825.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="&lt;Null&gt;" textFill="WHITE" visible="false">
+      <font>
+        <Font name="Arial Black" size="11.0" />
+      </font>
+    </Label>
+    <Label id="cab" fx:id="labelCab" alignment="CENTER" layoutX="125.0" layoutY="258.0" prefWidth="40.0" text="Cabeza">
+      <font>
+        <Font name="Arial Bold" size="10.0" />
+      </font>
+      <textFill>
+        <Color fx:id="x5" red="0.078" green="0.000" blue="1.000" />
+      </textFill>
+    </Label>
+
+    <!-- Labels que representan las posiciones de la secuencia -->
+    <Label fx:id="p0" alignment="CENTER" layoutX="125.0" layoutY="300.0" prefWidth="40.0" text="0" visible="true">
+      <font>
+        <Font name="Arial" size="10.0" fx:id="x2" />
+      </font>
+      <textFill>
+        <Color fx:id="x4" red="0.375" green="0.375" blue="0.375" />
+      </textFill>
+    </Label>
+    <Label fx:id="p1" alignment="CENTER" font="$x2" layoutX="175.0" layoutY="300.0" prefWidth="40.0" text="1" textFill="$x4" visible="true" />
+    <Label fx:id="p2" alignment="CENTER" font="$x2" layoutX="225.0" layoutY="300.0" prefWidth="40.0" text="2" textFill="$x4" visible="true" />
+    <Label fx:id="p3" alignment="CENTER" font="$x2" layoutX="275.0" layoutY="300.0" prefWidth="40.0" text="3" textFill="$x4" visible="true" />
+    <Label fx:id="p4" alignment="CENTER" font="$x2" layoutX="325.0" layoutY="300.0" prefWidth="40.0" text="4" textFill="$x4" visible="true" />
+    <Label fx:id="p5" alignment="CENTER" font="$x2" layoutX="375.0" layoutY="300.0" prefWidth="40.0" text="5" textFill="$x4" visible="true" />
+    <Label fx:id="p6" alignment="CENTER" font="$x2" layoutX="425.0" layoutY="300.0" prefWidth="40.0" text="6" textFill="$x4" visible="true" />
+    <Label fx:id="p7" alignment="CENTER" font="$x2" layoutX="475.0" layoutY="300.0" prefWidth="40.0" text="7" textFill="$x4" visible="true" />
+    <Label fx:id="p8" alignment="CENTER" font="$x2" layoutX="525.0" layoutY="300.0" prefWidth="40.0" text="8" textFill="$x4" visible="true" />
+    <Label fx:id="p9" alignment="CENTER" font="$x2" layoutX="575.0" layoutY="300.0" prefWidth="40.0" text="9" textFill="$x4" visible="true" />
+    <Label fx:id="p10" alignment="CENTER" font="$x2" layoutX="625.0" layoutY="300.0" prefWidth="40.0" text="10" textFill="$x4" visible="true" />
+    <Label fx:id="p11" alignment="CENTER" font="$x2" layoutX="675.0" layoutY="300.0" prefWidth="40.0" text="11" textFill="$x4" visible="true" />
+    <Label fx:id="p12" alignment="CENTER" font="$x2" layoutX="725.0" layoutY="300.0" prefWidth="40.0" text="12" textFill="$x4" visible="true" />
+    <Label fx:id="p13" alignment="CENTER" font="$x2" layoutX="775.0" layoutY="300.0" prefWidth="40.0" text="13" textFill="$x4" visible="true" />
+    <Label fx:id="p14" alignment="CENTER" font="$x2" layoutX="825.0" layoutY="300.0" prefWidth="40.0" text="14" textFill="$x4" visible="true" />
+
+    <!-- Animacion -->
+    <ImageView fx:id="piv" fitHeight="40.0" fitWidth="40.0" layoutX="125.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@/com/simlistadoble/imagenes/Piv.png" />
+      </image>
+    </ImageView>
+    <Label fx:id="labelPiv" alignment="CENTER" font="$x6" layoutX="825.0" layoutY="278.0" prefWidth="40.0" rotate="0.0" text="X" textFill="WHITE" visible="true" />
+
+    <!-- Labels que muestran la informacion despues de las operaciones realizadas -->
+    <Label fx:id="msg" alignment="CENTER" layoutX="120.0" layoutY="450.0" prefWidth="800.0" text="Label" textFill="#0029ff" visible="false">
+      <font>
+        <Font name="Arial Bold" size="12.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label fx:id="nota" alignment="CENTER" font="$x1" layoutX="120.0" layoutY="485.0" prefWidth="800.0" text="" textFill="$x5" visible="true" />
+
+    <!-- Funcionalidad del Simulador -->
+    <Label alignment="CENTER" layoutX="173.0" layoutY="523.0" prefWidth="259.0" text="*************** Insertar en la Lista ***************" textFill="$x4">
+      <font>
+        <Font name="Arial Black" size="9.0" fx:id="x3" />
+      </font>
+    </Label>
+    <Label alignment="CENTER" font="$x3" layoutX="443.0" layoutY="523.0" prefWidth="90.0" text="Dato" textFill="$x4" />
+    <Label alignment="CENTER" font="$x3" layoutX="547.0" layoutY="523.0" prefWidth="72.0" text="Posicion" textFill="$x4" />
+    <Label alignment="CENTER" font="$x3" layoutX="624.0" layoutY="523.0" prefWidth="70.0" text="Dato" textFill="$x4" />
+
+    <!-- Cajas de Texto -->
+    <TextField fx:id="txtIns" alignment="CENTER" layoutX="266.0" layoutY="535.0" opacity="0.7" prefWidth="80.0" />
+    <TextField fx:id="txtEli" alignment="CENTER" layoutX="443.0" layoutY="535.0" opacity="0.7" prefWidth="90.0" />
+    <TextField fx:id="txtEdit1" alignment="CENTER" layoutX="547.0" layoutY="535.0" opacity="0.7" prefWidth="72.0" />
+    <TextField fx:id="txtEdit2" alignment="CENTER" layoutX="624.0" layoutY="535.0" opacity="0.7" prefWidth="70.0" />
+
+    <!-- Botones -->
+    <Button fx:id="btInsFin" layoutX="266.0" layoutY="563.0" onAction="#btInsFin" prefWidth="80.0" text="Al Final" />
+    <Button fx:id="btInsIni" layoutX="174.0" layoutY="563.0" onAction="#btInsIni" prefWidth="80.0" text="Al Inicio" />
+    <Button fx:id="btEli" layoutX="443.0" layoutY="563.0" onAction="#btEli" prefWidth="90.0" text="Eliminar" />
+    <Button fx:id="btTam" layoutX="710.0" layoutY="535.0" mnemonicParsing="false" onAction="#btTam" prefWidth="98.0" text="Dar Tamaño" />
+    <Button fx:id="btReset" layoutX="710.0" layoutY="563.0" mnemonicParsing="false" onAction="#btReset" prefWidth="98.0" text="Reiniciar" />
+    <Button fx:id="btEdit" layoutX="561.0" layoutY="563.0" mnemonicParsing="false" onAction="#btEdit" prefWidth="114.0" text="Editar Posicion" />
+    <Button fx:id="btInsOrdenado" layoutX="352.0" layoutY="563.0" onAction="#btInsOrdenado" prefWidth="80.0" text="Ordenado" />
+    <Hyperlink fx:id="salir" font="$x1" layoutX="878.0" layoutY="620.0" onAction="#salir" text="Salir" textFill="RED" underline="true" visited="false" />
+  </children>
+</AnchorPane>

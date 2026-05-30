@@ -1,0 +1,38 @@
+
+.root { 
+    display: block;
+}
+
+.button {
+    -fx-font-size:10px;
+    -fx-font-family: Verdana,Helvetica;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(white, #CCC);
+    text-decoration-color: red;
+    -fx-border-color: gray;
+    -fx-border-radius: 1px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#CCC ,white);
+    -fx-border-color: red;
+}
+
+#texto-titulo {
+   -fx-font-size: 24px;
+   -fx-font-family: "Verdana";
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#cajas{
+    -fx-background-color: #FFFFFF;
+    -fx-float:left;
+    -fx-font-size:11px;
+    -fx-border-color: gray;
+    -fx-border-radius: 14px;
+}
+
+#cajas:focus{
+    -fx-background-color:  #CCC;
+}
