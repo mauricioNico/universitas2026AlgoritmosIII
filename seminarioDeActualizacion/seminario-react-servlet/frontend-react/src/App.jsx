@@ -6,7 +6,7 @@ function App() {
   const [nombre, setNombre] = useState("");
 
   const cargarAlumnos = () => {
-    fetch("http://localhost:8080/backend-servlet/api/alumnos")
+    fetch("/backend-servlet/api/alumnos")
       .then((response) => response.json())
       .then((data) => setAlumnos(data))
       .catch((error) => console.error("Error al obtener alumnos:", error));
@@ -19,7 +19,7 @@ function App() {
   const guardarAlumno = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:8080/backend-servlet/api/alumnos", {
+    fetch("/backend-servlet/api/alumnos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

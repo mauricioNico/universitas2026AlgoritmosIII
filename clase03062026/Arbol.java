@@ -151,7 +151,10 @@ public class Arbol {
      * ==================================================
      * RECORRIDOS DFS
      * ==================================================
-     */
+    *Recorridos en profundidad (DFS - Depth First Search).
+     *
+     * Utilizan la recursión. 
+    */
 
     /*
      * PREORDEN
@@ -283,6 +286,13 @@ public class Arbol {
         /*
          * La raíz entra primero.
          */
+
+/*
+* offer() agrega un elemento al final de la cola.
+* poll() elimina y devuelve el primer elemento de la cola.  
+* peek() devuelve el primer elemento de la cola sin eliminarlo.
+*/
+
         cola.offer(raiz);
 
         while (!cola.isEmpty()) {

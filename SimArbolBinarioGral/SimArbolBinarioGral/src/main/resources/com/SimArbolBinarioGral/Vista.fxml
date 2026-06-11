@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="panel" prefHeight="690.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="comsimarbolbinariogral.Simulador">
+  <children>
+    <!-- Imagenes en el fondo de la aplicacion -->
+    <ImageView fitHeight="690.0" fitWidth="1024.0" focusTraversable="false" layoutX="0.0" layoutY="0.0" opacity="1.0" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@imagenes/fondo.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="borde1" fitHeight="20.0" fitWidth="800.0" layoutX="116.0" layoutY="481.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" visible="false">
+      <image>
+        <Image url="@imagenes/borde1.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="borde2" fitHeight="20.0" fitWidth="800.0" layoutX="116.0" layoutY="481.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" visible="false">
+      <image>
+        <Image url="@imagenes/borde2.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="borde3" fitHeight="20.0" fitWidth="800.0" layoutX="116.0" layoutY="481.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" visible="false">
+      <image>
+        <Image url="@imagenes/borde3.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="borde" fitHeight="21.075" fitWidth="843.0" layoutX="90.0" layoutY="481.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" visible="true">
+      <image>
+        <Image url="@imagenes/borde1.png" />
+      </image>
+    </ImageView>
+    <!-- titulo del Simulador -->
+    <Label id="texto-titulo" alignment="CENTER" layoutX="110.0" layoutY="140.0" prefWidth="800.0" text="Simulador ArbolBinario&lt;T&gt;" textFill="RED">
+      <font>
+        <Font name="Verdana" size="22.0" />
+      </font>
+    </Label>
+    <!-- Nodos y lineas de la aplicacion -->
+    <Line fx:id="linea0" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea1" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea2" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea3" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea4" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea5" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea6" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea7" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea8" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea9" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea10" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea11" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea12" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea13" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea14" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea15" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea16" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea17" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea18" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea19" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea20" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea21" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea22" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea23" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea24" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea25" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea26" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea27" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea28" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea29" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea30" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea31" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea32" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea33" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea34" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea35" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea36" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea37" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea38" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <Line fx:id="linea39" endX="-50.0" endY="-12.0" layoutX="134.0" layoutY="92.0" startX="-85.0" startY="58.0" visible="false" />
+    <!-- Elementos que representan graficamente los Nodos del Arbol -->
+    <Circle fx:id="raiz" layoutX="512.0" layoutY="180.0" radius="14.0" strokeType="INSIDE" strokeWidth="2.0" visible="false">
+      <fill>
+        <Color blue="0.000" green="1.000" red="0.800" fx:id="x1" />
+      </fill>
+      <stroke>
+        <Color blue="0.064" green="0.400" red="0.000" fx:id="x2" />
+      </stroke>
+    </Circle>
+    <Circle fx:id="nodo1" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo2" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo3" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo4" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo5" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo6" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo7" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo8" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo9" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo10" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo11" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo12" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo13" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo14" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo15" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo16" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo17" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo18" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo19" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo20" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo21" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo22" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo23" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo24" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo25" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo26" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo27" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo28" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo29" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo30" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo31" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo32" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo33" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo34" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo35" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo36" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo37" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo38" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo39" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo40" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo41" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo42" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo43" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo44" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo45" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo46" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo47" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo48" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo49" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo50" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo51" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo52" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo53" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo54" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo55" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo56" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo57" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo58" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo59" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo60" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo61" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo62" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo63" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo64" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo65" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo66" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo67" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo68" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo69" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo70" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo71" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo72" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo73" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo74" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo75" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo76" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo77" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo78" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo79" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo80" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo81" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo82" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo83" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo84" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo85" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo86" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo87" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo88" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo89" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo90" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo91" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo92" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo93" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo94" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo95" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo96" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo97" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo98" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="nodo99" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <Circle fx:id="piv" fill="$x1" layoutX="512.0" layoutY="180.0" radius="14.0" stroke="$x2" strokeType="INSIDE" strokeWidth="2.0" visible="false" />
+    <!-- Labels que representan la informacion -->
+    <Label fx:id="label0" alignment="CENTER" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="444" textAlignment="CENTER" textFill="BLACK" visible="false">
+      <font>
+        <Font name="Arial Bold" size="11.0" fx:id="x3" />
+      </font>
+    </Label>
+    <Label fx:id="label1" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label2" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label3" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label4" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label5" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label6" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label7" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label8" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label9" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label10" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label11" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label12" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label13" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label14" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label15" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label16" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label17" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label18" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label19" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label20" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label21" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label22" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label23" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label24" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label25" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label26" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label27" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label28" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label29" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label30" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label31" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label32" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label33" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label34" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label35" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label36" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label37" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label38" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label39" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label40" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label41" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label42" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label43" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label44" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label45" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label46" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label47" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label48" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label49" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label50" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label51" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label52" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label53" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label54" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label55" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label56" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label57" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label58" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label59" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label60" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label61" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label62" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label63" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label64" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label65" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label66" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label67" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label68" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label69" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label70" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label71" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label72" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label73" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label74" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label75" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label76" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label77" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label78" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label79" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label80" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label81" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label82" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label83" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label84" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label85" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label86" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label87" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label88" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label89" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label90" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label91" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label92" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label93" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label94" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label95" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label96" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label97" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label98" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="label99" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <Label fx:id="labelPiv" alignment="CENTER" font="$x3" layoutX="502.0" layoutY="173.0" prefHeight="10.0" prefWidth="23.0" text="X" textAlignment="CENTER" textFill="BLACK" underline="false" visible="false" />
+    <!-- Labels que muestran la informacion despues de las operaciones realizadas -->
+    <!-- Labels que muestran la informacion despues de las operaciones realizadas -->
+    <Label fx:id="msg" alignment="CENTER" layoutX="120.0" layoutY="450.0" prefWidth="800.0" text="Label" textFill="#0029ff" visible="false">
+      <font>
+        <Font name="Arial Bold" size="12.0" fx:id="x5" />
+      </font>
+    </Label>
+    <Label fx:id="nota" alignment="CENTER" font="$x5" layoutX="120.0" layoutY="485.0" prefWidth="800.0" text="" textFill="#1400ff" visible="true" />
+    <!-- operaciones -->
+    <Label fx:id="tit1" alignment="CENTER" layoutX="164.0" layoutY="523.0" prefWidth="88.0" text="Padre">
+      <font>
+        <Font name="Arial Black" size="9.0" fx:id="yy" />
+      </font>
+      <textFill>
+        <Color blue="0.376" green="0.376" red="0.376" fx:id="x4" />
+      </textFill>
+    </Label>
+    <Label fx:id="tit2" alignment="CENTER" font="$yy" layoutX="261.0" layoutY="523.0" prefWidth="88.0" text="Dato" textFill="#606060" />
+    <Label fx:id="tit3" alignment="CENTER" font="$yy" layoutX="358.0" layoutY="523.0" prefWidth="80.0" styleClass="titlabel" text="Dato" textFill="$x4" />
+    <Label fx:id="tit4" alignment="CENTER" font="$yy" layoutX="447.0" layoutY="523.0" prefWidth="72.0" styleClass="titlabel" text="Dato" textFill="$x4" />
+    
+    <TextField fx:id="txtPadre" alignment="CENTER" layoutX="164.0" layoutY="535.0" opacity="0.7" prefWidth="88.0" />
+    <TextField fx:id="txtIns" alignment="CENTER" layoutX="261.0" layoutY="535.0" opacity="0.7" prefWidth="88.0" />
+    <TextField fx:id="txtEli" alignment="CENTER" layoutX="358.0" layoutY="535.0" opacity="0.7" prefWidth="80.0" />
+    <TextField fx:id="txtBuscar" alignment="CENTER" layoutX="447.0" layoutY="535.0" opacity="0.7" prefWidth="72.0" />
+    <ComboBox fx:id="txtLado" layoutX="164.0" layoutY="563.0" prefWidth="88.0" promptText="Lado:">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Izquierdo" />
+          <String fx:value="Derecho" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    
+    <Button layoutX="261.0" layoutY="563.0" mnemonicParsing="false" onAction="#btIns" prefWidth="87.24139404296875" text="Insertar" />
+    <Button layoutX="358.0" layoutY="563.0" mnemonicParsing="false" onAction="#btEli" prefHeight="19.0" prefWidth="80.0" text="Eliminar" />
+    <Button layoutX="447.0" layoutY="563.0" mnemonicParsing="false" onAction="#btBuscar" prefWidth="73.0" text="Ubicar" />
+    <Button layoutX="530.0" layoutY="535.0" mnemonicParsing="false" onAction="#btHojas" prefWidth="73.0" text="Hojas" />
+    <Button layoutX="530.0" layoutY="563.0" mnemonicParsing="false" onAction="#btPodar" prefWidth="72.0" text="Podar" />
+    <Button layoutX="613.0" layoutY="535.0" mnemonicParsing="false" onAction="#btPeso" prefWidth="87.24139404296875" text="Peso" />
+    <Button layoutX="613.0" layoutY="563.0" mnemonicParsing="false" onAction="#btAltura" prefWidth="88.0" text="Altura" />
+    <Button layoutX="713.0" layoutY="535.0" mnemonicParsing="false" onAction="#btPreorden" prefWidth="75.0" text="PreOrden" />
+    <Button layoutX="713.0" layoutY="563.0" mnemonicParsing="false" onAction="#btInorden" prefWidth="75.0" text="InOrden" />
+    <Button layoutX="798.0" layoutY="535.0" mnemonicParsing="false" onAction="#btPostorden" prefWidth="80.0" text="PostOrden" />
+    <Button layoutX="798.0" layoutY="563.0" mnemonicParsing="false" onAction="#btPorNiveles" prefWidth="80.0" text="Niveles" />
+    <Hyperlink fx:id="salir" font="$x5" layoutX="878.0" layoutY="620.0" onAction="#salir" text="Salir" textFill="RED" underline="true" visited="false" />
+    
+    
+  </children>
+</AnchorPane>

@@ -21,7 +21,8 @@ public class AlumnoServlet extends HttpServlet {
         alumnos.add("{ \"id\": 1, \"nombre\": \"Ana\" }");
         alumnos.add("{ \"id\": 2, \"nombre\": \"Luis\" }");
         alumnos.add("{ \"id\": 3, \"nombre\": \"Marta\" }");
-        contador = 4;
+        alumnos.add("{ \"id\": 4, \"nombre\": \"Carlos\" }");
+        contador = 5;
     }
 
     @Override

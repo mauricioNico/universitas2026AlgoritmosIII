@@ -1,0 +1,55 @@
+name: CI CD Fullstack React Servlet
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Compilar backend
+        working-directory: backend-servlet
+        run: mvn clean package
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias frontend
+        working-directory: frontend-react
+        run: npm install
+
+      - name: Compilar frontend
+        working-directory: frontend-react
+        run: npm run build
+
+      - name: Crear ZIP para Elastic Beanstalk
+        run: |
+          zip -r deploy.zip . \
+          -x "*.git*" \
+          -x "*/node_modules/*"
+
+      - name: Deploy AWS Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v22
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: seminario-actualizacion
+          environment_name: seminario-actualizacion-env
+          region: us-east-2
+          version_label: ${{ github.sha }}
+          deployment_package: deploy.zip
