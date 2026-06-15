@@ -36,7 +36,7 @@ function App() {
 
   return (
     <main className="contenedor">
-      <h1>Seminario de Actualización</h1>
+      <h1>Información de alumnos</h1>
       <h2>Listado de alumnos</h2>
 
       <form onSubmit={guardarAlumno} className="formulario">

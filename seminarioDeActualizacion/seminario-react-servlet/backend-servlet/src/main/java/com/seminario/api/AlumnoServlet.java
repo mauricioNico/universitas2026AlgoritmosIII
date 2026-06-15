@@ -19,8 +19,8 @@ public class AlumnoServlet extends HttpServlet {
 
     static {
         alumnos.add("{ \"id\": 1, \"nombre\": \"Ana\" }");
-        alumnos.add("{ \"id\": 2, \"nombre\": \"Luis\" }");
-        alumnos.add("{ \"id\": 3, \"nombre\": \"Marta\" }");
+        alumnos.add("{ \"id\": 2, \"nombre\": \"Mauricio\" }");
+        alumnos.add("{ \"id\": 3, \"nombre\": \"José\" }");
         alumnos.add("{ \"id\": 4, \"nombre\": \"Carlos\" }");
         contador = 5;
     }
