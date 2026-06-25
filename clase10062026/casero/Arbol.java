@@ -181,7 +181,7 @@ public class Arbol<T extends Comparable<T>> {
             return;
         }
 
-        Queue<NodoArbol<T>> cola = new LinkedList<>();
+        List<NodoArbol<T>> cola = new LinkedList<>();
 
         cola.offer(raiz);
 

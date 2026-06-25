@@ -1,0 +1,24 @@
+{
+  "alumnos": [
+    {
+      "legajo": 1001,
+      "nombre": "Juan",
+      "promedio": 8.5
+    },
+    {
+      "legajo": 1002,
+      "nombre": "Ana",
+      "promedio": 9.0
+    },
+    {
+      "legajo": 1003,
+      "nombre": "Luis",
+      "promedio": 7.5
+    },
+    {
+      "legajo": 1004,
+      "nombre": "Mauricio",
+      "promedio": 10.0
+    }
+  ]
+}
